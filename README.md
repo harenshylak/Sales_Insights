@@ -42,10 +42,18 @@ and transactions.market_code="Mark001";`
 
 # Data Analysis Using Power BI
 
+1.Create a proper data model.Here we have done a star schema.
+
 
 1. Formula to create norm_amount column
 
 `= Table.AddColumn(#"Filtered Rows", "norm_amount", each if [currency] = "USD" or [currency] ="USD#(cr)" then [sales_amount]*75 else [sales_amount], type any)`
+
+1. Formula to calculate Total revenue and sales quantiy
+`Revenue = SUM('sales transactions'[norm_amount])`
+`Sales_Qty = SUM('sales transactions'[sales_qty])`
+
+1.Make the dashboard in a way that every detail is understood from it easily. Analyse it and see what insights u can get from it.
 
 
 
