@@ -53,7 +53,7 @@ and transactions.market_code="Mark001";`
 `Revenue = SUM('sales transactions'[norm_amount])`
 `Sales_Qty = SUM('sales transactions'[sales_qty])`
 
-4.Make the dashboard in a way that every detail is understood from it easily. Analyse it and see what insights u can get from it.
+4. Make the dashboard in a way that every detail is understood from it easily. Analyse it and see what insights u can get from it.
 
 
 
